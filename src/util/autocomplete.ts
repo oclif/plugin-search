@@ -80,9 +80,9 @@ export class AutocompleteSearch extends Base {
 
     this.firstRender = true
 
-    // Make sure no default is set (so it won't be printed)
     this.initialValue = this.opt.default as string
 
+    // If suggestOnly is not set, we don't want to auto-populate the input, so we set the default value to null
     if (!this.opt.suggestOnly) {
       this.opt.default = null
     }
@@ -103,9 +103,9 @@ export class AutocompleteSearch extends Base {
     // eslint-disable-next-line unicorn/consistent-function-scoping
     const dontHaveAnswer = (): boolean => this.answer === undefined
 
-    void events.line.pipe(takeWhile(dontHaveAnswer)).forEach(this.onSubmit.bind(this))
+    events.line.pipe(takeWhile(dontHaveAnswer)).forEach(this.onSubmit.bind(this))
     // @ts-ignore
-    void events.keypress.pipe(takeWhile(dontHaveAnswer)).forEach(this.onKeypress.bind(this))
+    events.keypress.pipe(takeWhile(dontHaveAnswer)).forEach(this.onKeypress.bind(this))
 
     // Call once at init
     this.search()
@@ -154,11 +154,11 @@ export class AutocompleteSearch extends Base {
       }
     } else {
       content += this.rl.line
-      bottomContent += '  ' + chalk.yellow(this.opt.emptyText || 'No results...')
+      bottomContent += `  ${chalk.yellow(this.opt.emptyText || 'No results...')}`
     }
 
     if (error) {
-      bottomContent += '\n' + chalk.red('>> ') + error
+      bottomContent += `\n${chalk.red('>> ')}${error}`
     }
 
     this.firstRender = false
@@ -327,15 +327,13 @@ function renderList(choices: Choices, pointer: number): string {
   choices.forEach((choice, i) => {
     if (choice.type === 'separator') {
       separatorOffset += 1
-      output += '  ' + choice + '\n'
+      output += `  ${choice}\n`
       return
     }
 
     if (choice.disabled) {
       separatorOffset += 1
-      output += '  - ' + choice.name
-      output += ' (' + (typeof choice.disabled === 'string' ? choice.disabled : 'Disabled') + ')'
-      output += '\n'
+      output += `  - ${choice.name} ( ${typeof choice.disabled === 'string' ? choice.disabled : 'Disabled'})\n`
       return
     }
 
@@ -347,7 +345,7 @@ function renderList(choices: Choices, pointer: number): string {
       line = chalk.cyan(line)
     }
 
-    output += line + ' \n'
+    output += `${line}\n`
   })
 
   return output.replace(/\n$/, '')
