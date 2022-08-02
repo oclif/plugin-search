@@ -10,6 +10,9 @@ import {Command, Interfaces, toConfiguredId, toStandardizedId} from '@oclif/core
 import {AutocompleteSearch, Choices} from '../util/autocomplete'
 
 export default class Search extends Command {
+  public static summary = 'Search for a command.'
+  public static description = 'Once you select a command, hit enter and it will show the help for that command.'
+
   public async run(): Promise<unknown> {
     const commands = this.config.commands as Array<Interfaces.Command.Loadable & { readableId: string }>
     for (const command of commands) {
