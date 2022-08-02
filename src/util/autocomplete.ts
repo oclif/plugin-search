@@ -29,9 +29,16 @@ import * as Inquirer from 'inquirer'
 import chalk from 'chalk'
 import Fuse from 'fuse.js'
 
-type ReadLine = ReadLineInterface & { history?: string[]; line: string };
-
 type SearchOptions = Fuse.IFuseOptions<Record<string, unknown>>;
+
+type QuestionOpts = {
+  suggestOnly: boolean;
+  searchText: string;
+  footer: (currentChoices: Choices, index: number, output: string) => string;
+  searchOpts: SearchOptions;
+  emptyText: string;
+  displayKey: string;
+}
 
 export class Choices extends InquirerChoices {
   public constructor(choices: string[], options: { separator?: string } = {}) {
@@ -41,16 +48,10 @@ export class Choices extends InquirerChoices {
 }
 
 export class AutocompleteSearch extends Base {
-  public opt!: Inquirer.prompts.PromptOptions<Inquirer.Question> & {
-    suggestOnly: boolean;
+  public opt!: Inquirer.prompts.PromptOptions<Inquirer.Question> & QuestionOpts & {
     loop: boolean;
-    emptyText: string;
     pageSize: number;
-    searchText: string;
-    footer: (currentChoices: Choices, index: number, output: string) => string;
-    searchOpts: SearchOptions;
     options: Array<Record<string, unknown>>;
-    displayKey: string;
   };
 
   private currentChoices: Choices;
@@ -68,8 +69,8 @@ export class AutocompleteSearch extends Base {
   private lastSearchTerm!: string | undefined;
   private fuse: Fuse<Record<string, unknown>>;
 
-  public constructor(questions: Inquirer.Question[], public rl: ReadLine, answers: Record<string, any>) {
-    super(questions, rl, answers)
+  public constructor(question: Inquirer.Question & Partial<QuestionOpts>, public rl: ReadLineInterface, answers: Record<string, any> = {}) {
+    super(question, rl, answers)
     if (!this.opt.searchOpts) {
       this.throwParamError('searchOpts')
     }
@@ -93,10 +94,6 @@ export class AutocompleteSearch extends Base {
 
   public async _run(cb: (state: unknown) => void): Promise<AutocompleteSearch> {
     this.done = cb
-
-    if (Array.isArray(this.rl.history)) {
-      this.rl.history = []
-    }
 
     const events = observe(this.rl)
 
@@ -215,6 +212,7 @@ export class AutocompleteSearch extends Base {
       this.answer = line || this.rl.line
       this.answerName = line || this.rl.line
       this.shortAnswer = line || this.rl.line
+      // @ts-expect-error because readonly property
       this.rl.line = ''
     } else if (this.nbChoices) {
       choice = this.currentChoices.getChoice(this.selected) as Choice
@@ -296,6 +294,7 @@ export class AutocompleteSearch extends Base {
         this.rl.write(ansiEscapes.cursorLeft)
         const autoCompleted = this.currentChoices.getChoice(this.selected).value as string
         this.rl.write(ansiEscapes.cursorForward(autoCompleted.length))
+        // @ts-expect-error because readonly property
         this.rl.line = autoCompleted
         this.render()
       }
