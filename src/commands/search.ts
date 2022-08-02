@@ -36,7 +36,6 @@ export default class Search extends Command {
           ignoreLocation: true,
         },
         displayKey: 'readableId',
-        default: 'plugins add',
         options: commands,
         footer: (currentChoices: Choices, index: number): string | undefined => {
           const cmd = commands.find(c => c.readableId === currentChoices.getChoice(index).value)
