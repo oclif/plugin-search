@@ -25,7 +25,6 @@ export default class Search extends Command {
       {
         type: 'autocomplete-search',
         name: 'command',
-        suggestOnly: true,
         message: 'Search for a command',
         emptyText: 'Nothing found!',
         pageSize: 10,

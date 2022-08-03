@@ -32,7 +32,6 @@ import Fuse from 'fuse.js'
 type SearchOptions = Fuse.IFuseOptions<Record<string, unknown>>;
 
 type QuestionOpts = {
-  suggestOnly: boolean;
   searchText: string;
   footer: (currentChoices: Choices, index: number, output: string) => string;
   searchOpts: SearchOptions;
@@ -83,11 +82,6 @@ export class AutocompleteSearch extends Base {
 
     this.initialValue = this.opt.default as string
 
-    // If suggestOnly is not set, we don't want to auto-populate the input, so we set the default value to null
-    if (!this.opt.suggestOnly) {
-      this.opt.default = null
-    }
-
     const shouldLoop = this.opt.loop === undefined ? true : this.opt.loop
     this.paginator = new Paginator(this.screen, {isInfinite: shouldLoop})
   }
@@ -116,8 +110,7 @@ export class AutocompleteSearch extends Base {
     let bottomContent = ''
 
     if (this.firstRender) {
-      const suggestText = this.opt.suggestOnly ? ', tab to autocomplete' : ''
-      content += chalk.dim(`(Use arrow keys or type to search ${suggestText})`)
+      content += chalk.dim('(Use arrow keys or type to search , tab to autocomplete)')
     }
 
     // Render choices or answer depending on the state
@@ -166,9 +159,7 @@ export class AutocompleteSearch extends Base {
   public onSubmit(line: string): void {
     let lineOrRl = line || this.rl.line
 
-    // only set default when suggestOnly (behaving as input prompt)
-    // list prompt does only set default if matching actual item in list
-    if (this.opt.suggestOnly && !lineOrRl) {
+    if (!lineOrRl) {
       lineOrRl = (this.opt.default === null ? '' : this.opt.default) as string
     }
 
@@ -181,13 +172,8 @@ export class AutocompleteSearch extends Base {
         }
       }
 
-      let validationResult: string | boolean | Promise<string | boolean>
-      if (this.opt.suggestOnly) {
-        validationResult = this.opt.validate(lineOrRl, this.answers)
-      } else {
-        const choice = this.currentChoices.getChoice(this.selected)
-        validationResult = this.opt.validate(choice, this.answers)
-      }
+      const choice = this.currentChoices.getChoice(this.selected)
+      const validationResult = this.opt.validate(choice, this.answers)
 
       if (typeof validationResult === 'object' && typeof validationResult.then === 'function') {
         void validationResult.then(checkValidationResult)
@@ -201,20 +187,13 @@ export class AutocompleteSearch extends Base {
 
   public onSubmitAfterValidation(line: string): void {
     let choice = {} as Choice
-    if (this.nbChoices <= this.selected && !this.opt.suggestOnly) {
+    if (this.nbChoices <= this.selected) {
       this.rl.write(line)
       this.search(line)
       return
     }
 
-    if (this.opt.suggestOnly) {
-      choice.value = line || this.rl.line
-      this.answer = line || this.rl.line
-      this.answerName = line || this.rl.line
-      this.shortAnswer = line || this.rl.line
-      // @ts-expect-error because readonly property
-      this.rl.line = ''
-    } else if (this.nbChoices) {
+    if (this.nbChoices) {
       choice = this.currentChoices.getChoice(this.selected) as Choice
       this.answer = choice.value as string
       this.answerName = choice.name
@@ -230,10 +209,6 @@ export class AutocompleteSearch extends Base {
     const value = this.opt.filter(choice.value, this.answers) as string
     choice.value = value
     this.answer = value
-
-    if (this.opt.suggestOnly) {
-      this.shortAnswer = value
-    }
 
     this.status = 'answered'
     // Rerender prompt
@@ -289,7 +264,7 @@ export class AutocompleteSearch extends Base {
     let len: number
     const keyName = (e.key && e.key.name) || undefined
 
-    if (keyName === 'tab' && this.opt.suggestOnly) {
+    if (keyName === 'tab') {
       if (this.currentChoices.getChoice(this.selected)) {
         this.rl.write(ansiEscapes.cursorLeft)
         const autoCompleted = this.currentChoices.getChoice(this.selected).value as string
