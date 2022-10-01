@@ -446,14 +446,14 @@
     supports-color "^5.4.0"
     tslib "^1"
 
-"@oclif/color@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.npmjs.org/@oclif/color/-/color-1.0.0.tgz"
-  integrity sha512-jSvPCTa3OfwzGUsgGAO6AXam//UMBSIBCHGs6i3iGr+NQoMrBf6kx4UzwED0RzSCTc6nlqCzdhnCD18RSP7VAA==
+"@oclif/color@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@oclif/color/-/color-1.0.1.tgz#20ab9205e0924c6388918a88874e1f4b32df9970"
+  integrity sha512-qjYr+izgWdIVOroiBKqTzQgc1r5Wd9QB1J7yGM2EeelqhBARiiVLRZL45vhV4zdyTRdDkZS0EBzFwQap+nliLA==
   dependencies:
     ansi-styles "^4.2.1"
     chalk "^4.1.0"
-    strip-ansi "^6.0.0"
+    strip-ansi "^6.0.1"
     supports-color "^8.1.1"
     tslib "^2"
 
@@ -480,7 +480,7 @@
     widest-line "^3.1.0"
     wrap-ansi "^7.0.0"
 
-"@oclif/core@^1.0.8", "@oclif/core@^1.12.1", "@oclif/core@^1.16.4", "@oclif/core@^1.2.1":
+"@oclif/core@^1.0.8", "@oclif/core@^1.12.1", "@oclif/core@^1.16.4":
   version "1.16.4"
   resolved "https://registry.yarnpkg.com/@oclif/core/-/core-1.16.4.tgz#fafa338ada0624d7f1adac036302b05a37cd96d0"
   integrity sha512-l+xHtVMteJWeTZZ+f2yLyNjf69X0mhAH8GILXnmoAGAemXbc1DVstvloxOouarvm9xyHHhquzO1Qg5l6xa1VIw==
@@ -526,13 +526,13 @@
   dependencies:
     "@oclif/core" "^1.16.4"
 
-"@oclif/plugin-not-found@^2.3.1":
-  version "2.3.1"
-  resolved "https://registry.npmjs.org/@oclif/plugin-not-found/-/plugin-not-found-2.3.1.tgz#8fe1019fdeeb77be055314662bb9180808222e80"
-  integrity sha512-AeNBw+zSkRpePmpXO8xlL072VF2/R2yK3qsVs/JF26Yw1w77TWuRTdFR+hFotJtFCJ4QYqhNtKSjdryCO9AXsA==
+"@oclif/plugin-not-found@^2.3.3":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-not-found/-/plugin-not-found-2.3.3.tgz#390b2898455d709104b8e45c869ace134ac678f6"
+  integrity sha512-SIrSQmZAkxkje5XSHLQRj5cwUrJkPlMLil5Raqq7LGIskMWufsq5y3WzOb0kcFq4aKzzjtYDRdB+HP4670suiQ==
   dependencies:
-    "@oclif/color" "^1.0.0"
-    "@oclif/core" "^1.2.1"
+    "@oclif/color" "^1.0.1"
+    "@oclif/core" "^1.16.4"
     fast-levenshtein "^3.0.0"
     lodash "^4.17.21"
 
@@ -1109,10 +1109,10 @@ available-typed-arrays@^1.0.5:
   resolved "https://registry.npmjs.org/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
 
-aws-sdk@^2.1116.0:
-  version "2.1183.0"
-  resolved "https://registry.npmjs.org/aws-sdk/-/aws-sdk-2.1183.0.tgz#9a34b99a9accaff96c0530fcd2cfcc9296c23329"
-  integrity sha512-KtFXbZrEzMrCPH3wF0Qj/3eqJlNKeTiLO2jERmYDSaybY9mB5F1SCugBu2LkvIT+rA+K15d6qZTl84AoOQinEg==
+aws-sdk@^2.1226.0:
+  version "2.1227.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1227.0.tgz#2ef47b77aa104f07bf5b233c06adf51f166cd390"
+  integrity sha512-L6vnopVXVXKEqi0R4i54F6xSemczd/aRy4UscqnfpyvNYr9yLL3jVApFo7OX8hxompe/tgxdQFXvMiNzhkSrwQ==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
@@ -3919,15 +3919,15 @@ object.assign@^4.1.2:
     object-keys "^1.1.1"
 
 oclif@^3:
-  version "3.2.10"
-  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.2.10.tgz#8e3d8f068bbab3f326e466facd00f5ecd0ec16cf"
-  integrity sha512-hnvgVu71zB+MMXtbp22qisEgEA6vDEDBZqKH89W8UjiZbNCF7Iv4eAfpWFIs/5aTv8GCCSacQa3w6iXte15lKA==
+  version "3.2.12"
+  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.2.12.tgz#39c046d91924d27964d1496e2f189523ca5ac2b4"
+  integrity sha512-a8yRwGbL5vIFiFbLQJFVL5niDA3fcD542TH22NTFIkmU5bMApGP88MIA4Oa48VR9Qu35hDI9nvpQVLuoqb/iBQ==
   dependencies:
     "@oclif/core" "^1.16.4"
     "@oclif/plugin-help" "^5.1.14"
-    "@oclif/plugin-not-found" "^2.3.1"
+    "@oclif/plugin-not-found" "^2.3.3"
     "@oclif/plugin-warn-if-update-available" "^2.0.6"
-    aws-sdk "^2.1116.0"
+    aws-sdk "^2.1226.0"
     concurrently "^7.4.0"
     debug "^4.3.3"
     find-yarn-workspace-root "^2.0.0"
