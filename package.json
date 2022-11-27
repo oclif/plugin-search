@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@oclif/plugin-help": "^5",
-    "@oclif/plugin-plugins": "^2.1.6",
+    "@oclif/plugin-plugins": "^2.1.7",
     "@oclif/test": "^2",
     "@types/chai": "^4",
     "@types/inquirer": "^8.2.1",
