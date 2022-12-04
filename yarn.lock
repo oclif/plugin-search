@@ -496,7 +496,7 @@
   resolved "https://registry.npmjs.org/@oclif/linewrap/-/linewrap-1.0.0.tgz"
   integrity sha512-Ups2dShK52xXa8w6iBWLgcjPJWjais6KPJQq3gQ/88AY6BXoTX+MIGFPrWQO1KLMiQfoTpcLnUwloN4brrVUHw==
 
-"@oclif/plugin-help@^5", "@oclif/plugin-help@^5.1.16":
+"@oclif/plugin-help@^5", "@oclif/plugin-help@^5.1.19":
   version "5.1.19"
   resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-5.1.19.tgz#43051772fefafe9bfe8823e2298103feb351b9c7"
   integrity sha512-eQVRCFJOwRj8Tbqz8Lzd9GN38egwLCg+ohJ0xfg12CoXml03WqkfcFiAWkVwSWmLVrZUlUVrxfXKKkmpUaXZHg==
@@ -1521,7 +1521,7 @@ concat-map@0.0.1:
   resolved "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
-concurrently@^7.5.0:
+concurrently@^7.6.0:
   version "7.6.0"
   resolved "https://registry.yarnpkg.com/concurrently/-/concurrently-7.6.0.tgz#531a6f5f30cf616f355a4afb8f8fcb2bba65a49a"
   integrity sha512-BKtRgvcJGeZ4XttiDiNcFiRlxoAeZOseqUvyYRUp/Vtd+9p1ULmeoSqGsDA+2ivdeDFpqrJvGvmI+StKfKl5hw==
@@ -2447,10 +2447,10 @@ get-symbol-description@^1.0.0:
     call-bind "^1.0.2"
     get-intrinsic "^1.1.1"
 
-github-slugger@^1.4.0:
-  version "1.4.0"
-  resolved "https://registry.npmjs.org/github-slugger/-/github-slugger-1.4.0.tgz#206eb96cdb22ee56fdc53a28d5a302338463444e"
-  integrity sha512-w0dzqw/nt51xMVmlaV1+JRzN+oCa1KfcgGEWhxUG16wbdA+Xnt/yoFO8Z8x/V82ZcZ0wy6ln9QDup5avbhiDhQ==
+github-slugger@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/github-slugger/-/github-slugger-1.5.0.tgz#17891bbc73232051474d68bd867a34625c955f7d"
+  integrity sha512-wIh+gKBI9Nshz2o46B0B3f5k/W+WI9ZAv6y5Dn5WJ5SK1t0TnDimB4WE5rmTD05ZAIn8HALCZVmCsvj0w0v0lw==
 
 github-username@^6.0.0:
   version "6.0.0"
@@ -3793,20 +3793,20 @@ object.assign@^4.1.2:
     object-keys "^1.1.1"
 
 oclif@^3:
-  version "3.2.28"
-  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.2.28.tgz#a10ea7b4bc08344a46c9fbdee7c6c16fa4d19538"
-  integrity sha512-A5TxuGe5bDiCwxg0JvmhKnvEmdA6rPSeIUdkNOuxgGV696YAafR2ClCG4sku7WzB5anl01/ijtmyhfNegd0vhw==
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.3.1.tgz#23d0a698e2e678d8300878147d17b24b3217f5d5"
+  integrity sha512-fREjnEmuPubSS4Tjwm+GFxy/wHPMBhR5wrV08fhDfWZs+tNVfRltvD6GIJJGERGJF2PvhKyZ6SXXMkVh8FOaUA==
   dependencies:
     "@oclif/core" "^1.20.4"
-    "@oclif/plugin-help" "^5.1.16"
+    "@oclif/plugin-help" "^5.1.19"
     "@oclif/plugin-not-found" "^2.3.7"
     "@oclif/plugin-warn-if-update-available" "^2.0.14"
     aws-sdk "^2.1231.0"
-    concurrently "^7.5.0"
+    concurrently "^7.6.0"
     debug "^4.3.3"
     find-yarn-workspace-root "^2.0.0"
     fs-extra "^8.1"
-    github-slugger "^1.4.0"
+    github-slugger "^1.5.0"
     lodash "^4.17.21"
     normalize-package-data "^3.0.3"
     qqjs "^0.3.11"
