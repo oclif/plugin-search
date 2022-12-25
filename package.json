@@ -1,6 +1,6 @@
 {
   "name": "@oclif/plugin-search",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A command for searching commands",
   "author": "Salesforce",
   "homepage": "https://github.com/oclif/plugin-search",
