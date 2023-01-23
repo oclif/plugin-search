@@ -6,7 +6,7 @@
  */
 
 import {prompt, registerPrompt} from 'inquirer'
-import {Command, Interfaces, toConfiguredId, toStandardizedId} from '@oclif/core'
+import {Command, toConfiguredId, toStandardizedId} from '@oclif/core'
 import {AutocompleteSearch, Choices} from '../util/autocomplete'
 
 export default class Search extends Command {
@@ -14,7 +14,7 @@ export default class Search extends Command {
   public static description = 'Once you select a command, hit enter and it will show the help for that command.'
 
   public async run(): Promise<unknown> {
-    const commands = this.config.commands as Array<Interfaces.Command.Loadable & { readableId: string }>
+    const commands = this.config.commands as Array<Command.Loadable & { readableId: string }>
     for (const command of commands) {
       command.readableId = toConfiguredId(command.id, this.config)
     }
