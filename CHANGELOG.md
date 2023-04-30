@@ -1,3 +1,12 @@
+## [0.0.17](https://github.com/oclif/plugin-search/compare/0.0.16...0.0.17) (2023-04-30)
+
+
+### Bug Fixes
+
+* **deps:** bump rxjs from 7.8.0 to 7.8.1 ([41fd24b](https://github.com/oclif/plugin-search/commit/41fd24b6dad96b09522d1078297a321de5233dc8))
+
+
+
 ## [0.0.16](https://github.com/oclif/plugin-search/compare/0.0.15...0.0.16) (2023-04-16)
 
 
