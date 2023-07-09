@@ -534,11 +534,11 @@
   integrity sha512-Ups2dShK52xXa8w6iBWLgcjPJWjais6KPJQq3gQ/88AY6BXoTX+MIGFPrWQO1KLMiQfoTpcLnUwloN4brrVUHw==
 
 "@oclif/plugin-help@^5", "@oclif/plugin-help@^5.1.19":
-  version "5.2.10"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-5.2.10.tgz#f31b35409c8b523d72d5f901efe85dd8ab396635"
-  integrity sha512-l3hnloPkXOLGGrepLLdj8NsBpVhhEpg4jclIeIBaZzIo6+c+/uqcL2LjvOogmSEf5g4zooRtxivwUpcFiBSaBg==
+  version "5.2.11"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-help/-/plugin-help-5.2.11.tgz#4dc5cf12e11d49ecdbdb3d59958673eb091f3a19"
+  integrity sha512-B2cGOyRskorr8NiGrmIBYxEK0c4laJo+W16VeEblLVDW8w6BvnSwC6K4Vd6rkKmPHRsgqoYrA5BCfPTwvUdSCg==
   dependencies:
-    "@oclif/core" "^2.8.7"
+    "@oclif/core" "^2.8.11"
 
 "@oclif/plugin-not-found@^2.3.7":
   version "2.3.9"
