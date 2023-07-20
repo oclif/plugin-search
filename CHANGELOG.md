@@ -1,3 +1,12 @@
+## [0.0.21](https://github.com/oclif/plugin-search/compare/0.0.20...0.0.21) (2023-07-20)
+
+
+### Bug Fixes
+
+* **deps:** bump word-wrap from 1.2.3 to 1.2.4 ([9438954](https://github.com/oclif/plugin-search/commit/94389545fbfb56efc3fdde25b8905ef26a582fe5))
+
+
+
 ## [0.0.20](https://github.com/oclif/plugin-search/compare/0.0.19...0.0.20) (2023-07-16)
 
 
