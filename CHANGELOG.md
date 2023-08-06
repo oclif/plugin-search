@@ -1,3 +1,12 @@
+## [0.0.22](https://github.com/oclif/plugin-search/compare/0.0.21...0.0.22) (2023-08-06)
+
+
+### Bug Fixes
+
+* **deps:** bump inquirer from 8.2.5 to 8.2.6 ([91e3d65](https://github.com/oclif/plugin-search/commit/91e3d65c5da5141ce134a6a481c56dcc07f1db70))
+
+
+
 ## [0.0.21](https://github.com/oclif/plugin-search/compare/0.0.20...0.0.21) (2023-07-20)
 
 
