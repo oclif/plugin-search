@@ -14,7 +14,8 @@ export default class Search extends Command {
   public static description = 'Once you select a command, hit enter and it will show the help for that command.'
 
   public async run(): Promise<unknown> {
-    const commands = this.config.commands as Array<Command.Loadable & { readableId: string }>
+    const commands = (this.config.commands as Array<Command.Loadable & { readableId: string }>).filter(c => !c.hidden)
+
     for (const command of commands) {
       command.readableId = toConfiguredId(command.id, this.config)
     }
