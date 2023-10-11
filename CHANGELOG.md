@@ -1,3 +1,12 @@
+## [0.0.24](https://github.com/oclif/plugin-search/compare/0.0.23...0.0.24) (2023-10-11)
+
+
+### Bug Fixes
+
+* filter out ignored commands from search ([53637e5](https://github.com/oclif/plugin-search/commit/53637e571dd178ef7d9559c4b141454585e5b737))
+
+
+
 ## [0.0.23](https://github.com/oclif/plugin-search/compare/0.0.22...0.0.23) (2023-09-28)
 
 
