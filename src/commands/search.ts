@@ -12,7 +12,7 @@ export default class Search extends Command {
   public static description = 'Once you select a command, hit enter and it will show the help for that command.'
   public static summary = 'Search for a command.'
 
-  public async run(): Promise<void> {
+  public async run(): Promise<unknown> {
     const commands = this.config.commands.filter((c) => !c.hidden && !c.aliases.includes(c.id))
 
     const commandChoices = commands.map((c) => {
@@ -33,12 +33,6 @@ export default class Search extends Command {
       },
     })
 
-    const standardized = toStandardizedId(command, this.config)
-
-    if (command === 'help') {
-      return this.config.runCommand(standardized, [])
-    }
-
-    return this.config.runCommand('help', [standardized])
+    return this.config.runCommand('help', [toStandardizedId(command, this.config)])
   }
 }
