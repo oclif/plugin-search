@@ -37,7 +37,7 @@
   "engines": {
     "node": ">=18.0.0"
   },
-  "exports": "dist/index.js",
+  "exports": "./dist/index.js",
   "files": [
     "/bin",
     "/dist",
@@ -63,9 +63,9 @@
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
     "lint": "eslint . --ext .ts",
-    "postpack": "shx rm -f oclif.manifest.json",
+    "postpack": "shx rm -f oclif.manifest.json oclif.lock",
     "posttest": "yarn lint",
-    "prepack": "yarn build && oclif manifest && oclif readme",
+    "prepack": "yarn build && oclif lock && oclif manifest && oclif readme",
     "prepare": "husky install",
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
     "version": "oclif readme && git add README.md"
