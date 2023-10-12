@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/oclif/plugin-search/compare/1.0.1...1.0.2) (2023-10-12)
+
+### Bug Fixes
+
+- bump @oclif/core ([601ef33](https://github.com/oclif/plugin-search/commit/601ef33706884391c52cff20012d2d73c2dcd7e1))
+
 ## [1.0.1](https://github.com/oclif/plugin-search/compare/0.0.24...1.0.1) (2023-10-12)
 
 ### Bug Fixes

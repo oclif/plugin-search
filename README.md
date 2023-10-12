@@ -10,6 +10,7 @@ A `search` command for your oclif CLI
 
 <!-- toc -->
 
+- [@oclif/plugin-search](#oclifplugin-search)
 - [Usage](#usage)
 - [Commands](#commands)
 <!-- tocstop -->
@@ -23,7 +24,7 @@ $ npm install -g @oclif/plugin-search
 $ @oclif/plugin-search COMMAND
 running command...
 $ @oclif/plugin-search (--version)
-@oclif/plugin-search/0.0.25 linux-x64 node-v18.18.0
+@oclif/plugin-search/1.0.2 linux-x64 node-v18.18.0
 $ @oclif/plugin-search --help [COMMAND]
 USAGE
   $ @oclif/plugin-search COMMAND
@@ -52,6 +53,6 @@ DESCRIPTION
   Once you select a command, hit enter and it will show the help for that command.
 ```
 
-_See code: [src/commands/search.ts](https://github.com/oclif/plugin-search/blob/0.0.25/src/commands/search.ts)_
+_See code: [src/commands/search.ts](https://github.com/oclif/plugin-search/blob/1.0.2/src/commands/search.ts)_
 
 <!-- commandsstop -->
