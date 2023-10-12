@@ -13,17 +13,16 @@ export default class Search extends Command {
   public static summary = 'Search for a command.'
 
   public async run(): Promise<unknown> {
-    const commands = this.config.commands
+    const commandChoices = this.config.commands
       .filter((c) => !c.hidden && !c.aliases.includes(c.id))
       .sort((a, b) => a.id.localeCompare(b.id))
-
-    const commandChoices = commands.map((c) => {
-      const name = toConfiguredId(c.id, this.config)
-      return {
-        description: c.summary,
-        name,
-        value: name,
-      }
+      .map(((c) => {
+        const name = toConfiguredId(c.id, this.config)
+        return {
+          description: c.summary,
+          name,
+          value: name,
+        }
     })
 
     const command = await autocomplete<string>({
