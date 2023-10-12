@@ -1,8 +1,7 @@
 {
   "name": "@oclif/plugin-search",
-  "version": "0.0.24",
+  "version": "1.0.0",
   "description": "A command for searching commands",
-  "version": "0.0.23",
   "author": "Salesforce",
   "bugs": "https://github.com/oclif/plugin-search/issues",
   "dependencies": {
