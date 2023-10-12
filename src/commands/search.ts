@@ -16,14 +16,14 @@ export default class Search extends Command {
     const commandChoices = this.config.commands
       .filter((c) => !c.hidden && !c.aliases.includes(c.id))
       .sort((a, b) => a.id.localeCompare(b.id))
-      .map(((c) => {
+      .map((c) => {
         const name = toConfiguredId(c.id, this.config)
         return {
           description: c.summary,
           name,
           value: name,
         }
-    })
+      })
 
     const command = await autocomplete<string>({
       emptyText: 'Nothing found!',
