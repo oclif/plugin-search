@@ -9,7 +9,7 @@
     "inquirer-autocomplete-standalone": "^0.7.0"
   },
   "devDependencies": {
-    "@commitlint/config-conventional": "^17.8.0",
+    "@commitlint/config-conventional": "^17.8.1",
     "@oclif/plugin-help": "^5",
     "@oclif/plugin-plugins": "^2.4.7",
     "@oclif/prettier-config": "^0.2.1",
