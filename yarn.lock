@@ -3416,10 +3416,10 @@ ini@^1.3.4:
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.8.tgz#a29da425b48806f34767a4efce397269af28432c"
   integrity sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==
 
-inquirer-autocomplete-standalone@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/inquirer-autocomplete-standalone/-/inquirer-autocomplete-standalone-0.7.0.tgz#745530460deee05470988fc6a9bee9933637fec9"
-  integrity sha512-DZ3abNGnQ6DmmCJiwpkljMZNE5Zwx3U8ZqUzl4aW9pV3ooXySERRL2PTYlCoG26qwCzEwTrftfN1QQz5cenwPw==
+inquirer-autocomplete-standalone@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/inquirer-autocomplete-standalone/-/inquirer-autocomplete-standalone-0.8.1.tgz#540ac162d5dd01f83d0f4016b76bf0bb64e2fff8"
+  integrity sha512-mlzwCTiXDX1Cw4yJL5PCq32k23XYLTK8K6BDFoL1a76iJeFB5ul6IoMU9spgdDagl2SM7P6ZaCNjj8VNXRDPOQ==
   dependencies:
     "@inquirer/core" "^3.1.1"
     "@inquirer/type" "^1.1.2"
