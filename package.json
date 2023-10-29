@@ -16,7 +16,7 @@
     "@oclif/test": "^3.0.4",
     "@types/chai": "^4",
     "@types/inquirer": "^8.2.9",
-    "@types/mocha": "^10.0.2",
+    "@types/mocha": "^10.0.3",
     "@types/node": "^18",
     "chai": "^4",
     "commitlint": "^17.8.1",
