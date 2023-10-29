@@ -1,3 +1,9 @@
+## [1.0.5](https://github.com/oclif/plugin-search/compare/1.0.4...1.0.5) (2023-10-29)
+
+### Bug Fixes
+
+- **deps:** bump inquirer-autocomplete-standalone from 0.7.0 to 0.8.1 ([#253](https://github.com/oclif/plugin-search/issues/253)) ([2356785](https://github.com/oclif/plugin-search/commit/23567857417b5503329048fcaaa81290152f9bcf))
+
 ## [1.0.4](https://github.com/oclif/plugin-search/compare/1.0.3...1.0.4) (2023-10-22)
 
 ### Bug Fixes
