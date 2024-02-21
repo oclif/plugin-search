@@ -1,3 +1,9 @@
+## [1.0.16](https://github.com/oclif/plugin-search/compare/1.0.15...1.0.16) (2024-02-21)
+
+### Bug Fixes
+
+- **deps:** bump ip from 2.0.0 to 2.0.1 ([#335](https://github.com/oclif/plugin-search/issues/335)) ([d1c4193](https://github.com/oclif/plugin-search/commit/d1c4193b43a2322eee7f93bbc605d25d022a99e8))
+
 ## [1.0.15](https://github.com/oclif/plugin-search/compare/1.0.14...1.0.15) (2024-02-19)
 
 ### Bug Fixes
