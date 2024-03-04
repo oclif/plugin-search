@@ -1,3 +1,22 @@
+## [1.0.19](https://github.com/oclif/plugin-search/compare/1.0.19-dev.0...1.0.19) (2024-03-04)
+
+### Bug Fixes
+
+- bump oclif/core ([8b3a746](https://github.com/oclif/plugin-search/commit/8b3a74614a53492f3397bb1fdc69bc2a687671c0))
+- dont depend on plugin-help ([84fcfa9](https://github.com/oclif/plugin-search/commit/84fcfa93682a6932dd661f8f944fed6a6ace4cc2))
+
+## [1.0.19-dev.0](https://github.com/oclif/plugin-search/compare/1.0.18...1.0.19-dev.0) (2024-03-04)
+
+### Bug Fixes
+
+- bump oclif/core ([520d1c5](https://github.com/oclif/plugin-search/commit/520d1c5c4f13cb14e0a0b10b5feaa28675f9c989))
+
+## [1.0.18](https://github.com/oclif/plugin-search/compare/1.0.17...1.0.18) (2024-03-03)
+
+### Bug Fixes
+
+- **deps:** bump @oclif/core from 3.19.6 to 3.20.0 ([#346](https://github.com/oclif/plugin-search/issues/346)) ([6ed8f30](https://github.com/oclif/plugin-search/commit/6ed8f30523521107198846eea12c3e90bf5d0ed3))
+
 ## [1.0.17](https://github.com/oclif/plugin-search/compare/1.0.16...1.0.17) (2024-02-25)
 
 ### Bug Fixes
