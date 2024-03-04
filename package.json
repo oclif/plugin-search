@@ -5,7 +5,7 @@
   "author": "Salesforce",
   "bugs": "https://github.com/oclif/plugin-search/issues",
   "dependencies": {
-    "@oclif/core": "^3.20.0",
+    "@oclif/core": "3.20.1-dev.1",
     "inquirer-autocomplete-standalone": "^0.8.1"
   },
   "devDependencies": {
