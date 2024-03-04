@@ -5,7 +5,7 @@
  * For full license text, see LICENSE.txt file in the repo root or https://opensource.org/licenses/BSD-3-Clause
  */
 
-import {Command, toConfiguredId, toStandardizedId} from '@oclif/core'
+import {Command, loadHelpClass, toConfiguredId, toStandardizedId} from '@oclif/core'
 import autocomplete from 'inquirer-autocomplete-standalone'
 
 export default class Search extends Command {
@@ -34,6 +34,8 @@ export default class Search extends Command {
       },
     })
 
-    return this.config.runCommand('help', [toStandardizedId(command, this.config)])
+    const Help = await loadHelpClass(this.config)
+    const help = new Help(this.config, this.config.pjson.oclif.helpOptions ?? this.config.pjson.helpOptions)
+    return help.showHelp([toStandardizedId(command, this.config)])
   }
 }
