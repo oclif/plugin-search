@@ -3,7 +3,7 @@
     "declaration": true,
     "module": "Node16",
     "outDir": "dist",
-    "rootDir": "src",
+    "rootDirs": ["src"],
     "strict": true,
     "target": "ES2022",
     "moduleResolution": "Node16",
