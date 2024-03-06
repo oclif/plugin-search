@@ -1,3 +1,11 @@
+## [1.0.20](https://github.com/oclif/plugin-search/compare/1.0.20-qa.0...1.0.20) (2024-03-06)
+
+## [1.0.20-qa.0](https://github.com/oclif/plugin-search/compare/1.0.19...1.0.20-qa.0) (2024-03-06)
+
+### Bug Fixes
+
+- publish npm-shrinkwrap.json ([5e41949](https://github.com/oclif/plugin-search/commit/5e41949e0ae0aad548d497b3d72db7f439caf019))
+
 ## [1.0.19](https://github.com/oclif/plugin-search/compare/1.0.19-dev.0...1.0.19) (2024-03-04)
 
 ### Bug Fixes
