@@ -4,7 +4,6 @@ A `search` command for your oclif CLI
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/oclif-plugin-search.svg)](https://npmjs.org/package/oclif-plugin-search)
-[![CircleCI](https://circleci.com/gh/oclif/plugin-search/tree/main.svg?style=shield)](https://circleci.com/gh/oclif/plugin-search/tree/main)
 [![Downloads/week](https://img.shields.io/npm/dw/oclif-plugin-search.svg)](https://npmjs.org/package/oclif-plugin-search)
 [![License](https://img.shields.io/npm/l/oclif-plugin-search.svg)](https://github.com/oclif/plugin-search/blob/main/package.json)
 
@@ -13,6 +12,8 @@ A `search` command for your oclif CLI
 - [@oclif/plugin-search](#oclifplugin-search)
 - [Usage](#usage)
 - [Commands](#commands)
+  - [`@oclif/plugin-search search`](#oclifplugin-search-search)
+- [Contributing](#contributing)
 <!-- tocstop -->
 
 # Usage
@@ -37,7 +38,11 @@ USAGE
 
 <!-- commands -->
 
-- [`@oclif/plugin-search search`](#oclifplugin-search-search)
+- [@oclif/plugin-search](#oclifplugin-search)
+- [Usage](#usage)
+- [Commands](#commands)
+  - [`@oclif/plugin-search search`](#oclifplugin-search-search)
+- [Contributing](#contributing)
 
 ## `@oclif/plugin-search search`
 
@@ -56,3 +61,7 @@ DESCRIPTION
 _See code: [src/commands/search.ts](https://github.com/oclif/plugin-search/blob/1.0.20/src/commands/search.ts)_
 
 <!-- commandsstop -->
+
+# Contributing
+
+See [contributing guide](./CONRTIBUTING.md)
