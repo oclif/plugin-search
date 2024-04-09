@@ -7,6 +7,6 @@
 /tmp
 node_modules
 oclif.manifest.json
-oclif.lock
+
 .idea/
 npm-shrinkwrap.json
