@@ -40,8 +40,7 @@
   "files": [
     "/dist",
     "/npm-shrinkwrap.json",
-    "/oclif.manifest.json",
-    "/oclif.lock"
+    "/oclif.manifest.json"
   ],
   "homepage": "https://github.com/oclif/plugin-search",
   "keywords": [
@@ -60,12 +59,12 @@
   "repository": "oclif/plugin-search",
   "scripts": {
     "build": "shx rm -rf lib && tsc",
-    "clean": "shx rm -f oclif.manifest.json npm-shrinkwrap.json oclif.lock",
+    "clean": "shx rm -f oclif.manifest.json npm-shrinkwrap.json",
     "compile": "tsc",
     "lint": "eslint . --ext .ts",
     "postpack": "yarn run clean",
     "posttest": "yarn lint",
-    "prepack": "yarn build && oclif manifest && oclif readme && npm shrinkwrap && oclif lock",
+    "prepack": "yarn build && oclif manifest && oclif readme && npm shrinkwrap",
     "prepare": "husky && yarn build",
     "pretest": "yarn build --noEmit && tsc -p test --noEmit",
     "test": "mocha --forbid-only \"test/**/*.test.ts\"",
