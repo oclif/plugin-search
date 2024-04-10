@@ -12,7 +12,6 @@ A `search` command for your oclif CLI
 - [@oclif/plugin-search](#oclifplugin-search)
 - [Usage](#usage)
 - [Commands](#commands)
-  - [`@oclif/plugin-search search`](#oclifplugin-search-search)
 - [Contributing](#contributing)
 <!-- tocstop -->
 
@@ -25,7 +24,7 @@ $ npm install -g @oclif/plugin-search
 $ @oclif/plugin-search COMMAND
 running command...
 $ @oclif/plugin-search (--version)
-@oclif/plugin-search/1.0.20 linux-x64 node-v18.19.1
+@oclif/plugin-search/1.0.21 linux-x64 node-v18.20.1
 $ @oclif/plugin-search --help [COMMAND]
 USAGE
   $ @oclif/plugin-search COMMAND
@@ -38,11 +37,7 @@ USAGE
 
 <!-- commands -->
 
-- [@oclif/plugin-search](#oclifplugin-search)
-- [Usage](#usage)
-- [Commands](#commands)
-  - [`@oclif/plugin-search search`](#oclifplugin-search-search)
-- [Contributing](#contributing)
+- [`@oclif/plugin-search search`](#oclifplugin-search-search)
 
 ## `@oclif/plugin-search search`
 
@@ -58,7 +53,7 @@ DESCRIPTION
   Once you select a command, hit enter and it will show the help for that command.
 ```
 
-_See code: [src/commands/search.ts](https://github.com/oclif/plugin-search/blob/1.0.20/src/commands/search.ts)_
+_See code: [src/commands/search.ts](https://github.com/oclif/plugin-search/blob/1.0.21/src/commands/search.ts)_
 
 <!-- commandsstop -->
 

@@ -1,3 +1,9 @@
+## [1.0.21](https://github.com/oclif/plugin-search/compare/1.0.20...1.0.21) (2024-04-10)
+
+### Bug Fixes
+
+- **deps:** bump tar from 6.1.11 to 6.2.1 ([4663516](https://github.com/oclif/plugin-search/commit/46635166b0a338a273843a27410d4ce2647c441d))
+
 ## [1.0.20](https://github.com/oclif/plugin-search/compare/1.0.20-qa.0...1.0.20) (2024-03-06)
 
 ## [1.0.20-qa.0](https://github.com/oclif/plugin-search/compare/1.0.19...1.0.20-qa.0) (2024-03-06)
