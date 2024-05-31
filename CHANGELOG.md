@@ -1,3 +1,9 @@
+# [1.1.0](https://github.com/oclif/plugin-search/compare/1.0.24...1.1.0) (2024-05-31)
+
+### Features
+
+- use @oclif/core v4 ([1a72417](https://github.com/oclif/plugin-search/commit/1a724170fb430904f33340e938a0d27ded9b99ef))
+
 ## [1.0.24](https://github.com/oclif/plugin-search/compare/1.0.23...1.0.24) (2024-05-12)
 
 ### Bug Fixes
