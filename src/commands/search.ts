@@ -16,7 +16,10 @@ export default class Search extends Command {
 
   public async run(): Promise<unknown> {
     this.log(
-      `Use ${ux.colorize('bold', '↑')} and ${ux.colorize('bold', '↓')} keys or type to search. Press ${ux.colorize('bold', 'ESC')} to exit.\n`,
+      ux.colorize(
+        'cyan',
+        `Use ${ux.colorize('bold', '↑')} and ${ux.colorize('bold', '↓')} keys or type to search for a command.\nPress ${ux.colorize('bold', 'ENTER')} to view help. Press ${ux.colorize('bold', 'ESC')} to exit.\n`,
+      ),
     )
     const commandChoices = this.config.commands
       .filter((c) => !c.hidden && !c.aliases.includes(c.id))
