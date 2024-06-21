@@ -6,6 +6,7 @@
  */
 
 import {Command, loadHelpClass, toConfiguredId, toStandardizedId, ux} from '@oclif/core'
+import ansiEscapes from 'ansi-escapes'
 import autocomplete from 'inquirer-autocomplete-standalone'
 import readline from 'node:readline'
 
@@ -14,9 +15,9 @@ export default class Search extends Command {
   public static summary = 'Search for a command.'
 
   public async run(): Promise<unknown> {
-    this.log(`Interactively search the catalog of ${this.config.bin} commands.
-Use ${ux.colorize('bold', '↑')} and ${ux.colorize('bold', '↓')} keys or type to search. Press ${ux.colorize('bold', 'ESC')} to exit.
-`)
+    this.log(
+      `Use ${ux.colorize('bold', '↑')} and ${ux.colorize('bold', '↓')} keys or type to search. Press ${ux.colorize('bold', 'ESC')} to exit.\n`,
+    )
     const commandChoices = this.config.commands
       .filter((c) => !c.hidden && !c.aliases.includes(c.id))
       .sort((a, b) => a.id.localeCompare(b.id))
@@ -29,21 +30,28 @@ Use ${ux.colorize('bold', '↑')} and ${ux.colorize('bold', '↓')} keys or type
         }
       })
 
+    const pageSize = Math.floor(process.stdout.rows < 20 ? process.stdout.rows / 2 : 10)
     const commandPromise = autocomplete<string>({
       emptyText: 'Nothing found!',
       message: 'Search for a command',
-      pageSize: Math.floor(process.stdout.rows < 20 ? process.stdout.rows / 2 : 10),
+      pageSize,
       async source(input) {
         return input ? commandChoices.filter((c) => c.name.includes(input)) : commandChoices
       },
     })
 
+    function cancel() {
+      commandPromise.cancel()
+      // erase the list of commands
+      process.stdout.write(ansiEscapes.eraseLines(pageSize + 3))
+    }
+
     readline.emitKeypressEvents(process.stdin)
     process.stdin.setRawMode(true)
     process.stdin.on('keypress', (_, key) => {
-      if (key.name === 'escape') {
-        commandPromise.cancel()
-      }
+      if (key.name === 'escape') cancel()
+
+      if (key.name === 'c' && key.ctrl) cancel()
     })
 
     const command = await commandPromise
