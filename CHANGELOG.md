@@ -1,3 +1,19 @@
+# [1.2.0](https://github.com/oclif/plugin-search/compare/1.1.5-dev.2...1.2.0) (2024-06-24)
+
+## [1.1.5-dev.2](https://github.com/oclif/plugin-search/compare/1.1.5-dev.1...1.1.5-dev.2) (2024-06-21)
+
+## [1.1.5-dev.1](https://github.com/oclif/plugin-search/compare/1.1.5-dev.0...1.1.5-dev.1) (2024-06-21)
+
+### Bug Fixes
+
+- standardize cancel ux ([0cf784d](https://github.com/oclif/plugin-search/commit/0cf784d790e360dbfc02ee67e4aca48c9ec16d6b))
+
+## [1.1.5-dev.0](https://github.com/oclif/plugin-search/compare/1.1.4...1.1.5-dev.0) (2024-06-20)
+
+### Features
+
+- ux improvements ([87e5969](https://github.com/oclif/plugin-search/commit/87e59692ba1fb378f4f904de664bba46c9b55197))
+
 ## [1.1.4](https://github.com/oclif/plugin-search/compare/1.1.3...1.1.4) (2024-06-16)
 
 ### Bug Fixes
