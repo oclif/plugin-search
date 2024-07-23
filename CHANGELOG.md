@@ -1,3 +1,9 @@
+## [1.2.4](https://github.com/oclif/plugin-search/compare/1.2.3...1.2.4) (2024-07-23)
+
+### Bug Fixes
+
+- husky 9.1.1 fix ([16177aa](https://github.com/oclif/plugin-search/commit/16177aaefa5177b2291bf12b84928416aa469c57))
+
 ## [1.2.3](https://github.com/oclif/plugin-search/compare/1.2.2...1.2.3) (2024-07-14)
 
 ### Bug Fixes
