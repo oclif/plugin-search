@@ -5,9 +5,13 @@
   "author": "Salesforce",
   "bugs": "https://github.com/oclif/plugin-search/issues",
   "dependencies": {
+    "@inquirer/search": "^2.0.1",
     "@oclif/core": "^4",
-    "ansi-escapes": "^7.0.0",
-    "inquirer-autocomplete-standalone": "^0.8.1"
+    "ansis": "^3.3.2",
+    "clipboardy": "^4.0.0",
+    "fuzzysort": "^3.0.2",
+    "got": "^14.4.2",
+    "open": "^10.1.0"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^19",
