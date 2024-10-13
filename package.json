@@ -1,13 +1,17 @@
 {
   "name": "@oclif/plugin-search",
-  "version": "1.2.11",
+  "version": "1.2.12-dev.0",
   "description": "A command for searching commands",
   "author": "Salesforce",
   "bugs": "https://github.com/oclif/plugin-search/issues",
   "dependencies": {
+    "@inquirer/search": "^2.0.1",
     "@oclif/core": "^4",
-    "ansi-escapes": "^7.0.0",
-    "inquirer-autocomplete-standalone": "^0.8.1"
+    "ansis": "^3.3.2",
+    "clipboardy": "^4.0.0",
+    "fuzzysort": "^3.0.2",
+    "got": "^13.0.0",
+    "open": "^10.1.0"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^19",
