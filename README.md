@@ -3,9 +3,9 @@
 A `search` command for your oclif CLI
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/oclif-plugin-search.svg)](https://npmjs.org/package/oclif-plugin-search)
-[![Downloads/week](https://img.shields.io/npm/dw/oclif-plugin-search.svg)](https://npmjs.org/package/oclif-plugin-search)
-[![License](https://img.shields.io/npm/l/oclif-plugin-search.svg)](https://github.com/oclif/plugin-search/blob/main/package.json)
+[![Version](https://img.shields.io/npm/v/oclif-plugin-search.svg)](https://npmjs.org/package/@oclif/plugin-search)
+[![Downloads/week](https://img.shields.io/npm/dw/oclif-plugin-search.svg)](https://npmjs.org/package/@oclif/plugin-search)
+[![License](https://img.shields.io/npm/l/oclif-plugin-search.svg)](https://github.com/oclif/plugin-search/blob/main/LICENSE.txt)
 
 <!-- toc -->
 
