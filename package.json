@@ -16,7 +16,7 @@
     "@oclif/plugin-plugins": "^4",
     "@oclif/prettier-config": "^0.2.1",
     "@types/chai": "^4",
-    "@types/inquirer": "^8.2.10",
+    "@types/inquirer": "^8.2.11",
     "@types/mocha": "^10.0.9",
     "@types/node": "^18",
     "chai": "^4",
