@@ -1,3 +1,9 @@
+## [1.2.30](https://github.com/oclif/plugin-search/compare/1.2.29...1.2.30) (2025-09-14)
+
+### Bug Fixes
+
+- **deps:** bump ansi-escapes from 7.0.0 to 7.1.0 ([#715](https://github.com/oclif/plugin-search/issues/715)) ([19481ff](https://github.com/oclif/plugin-search/commit/19481ff22bdec91f2e041e0eafddcbf5f1d232fc))
+
 ## [1.2.29](https://github.com/oclif/plugin-search/compare/1.2.28...1.2.29) (2025-09-14)
 
 ### Bug Fixes
