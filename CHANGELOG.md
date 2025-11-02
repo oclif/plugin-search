@@ -1,3 +1,9 @@
+## [1.2.35](https://github.com/oclif/plugin-search/compare/1.2.34...1.2.35) (2025-11-02)
+
+### Bug Fixes
+
+- **deps:** bump @oclif/core from 4.7.2 to 4.8.0 ([#745](https://github.com/oclif/plugin-search/issues/745)) ([ca01216](https://github.com/oclif/plugin-search/commit/ca01216283c720a35462842768494d17e50886e6))
+
 ## [1.2.34](https://github.com/oclif/plugin-search/compare/1.2.33...1.2.34) (2025-10-26)
 
 ### Bug Fixes
