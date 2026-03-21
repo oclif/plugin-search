@@ -1,3 +1,9 @@
+## [1.2.40](https://github.com/oclif/plugin-search/compare/1.2.39...1.2.40) (2026-03-21)
+
+### Bug Fixes
+
+- **deps:** bump flatted from 3.3.2 to 3.4.2 ([#801](https://github.com/oclif/plugin-search/issues/801)) ([92da243](https://github.com/oclif/plugin-search/commit/92da243b975c7c3542c3a2d6c2cb8b2215d6d366))
+
 ## [1.2.39](https://github.com/oclif/plugin-search/compare/1.2.38...1.2.39) (2026-03-15)
 
 ### Bug Fixes
