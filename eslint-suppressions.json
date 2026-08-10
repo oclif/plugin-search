@@ -1,0 +1,16 @@
+{
+  "src/commands/search.ts": {
+    "@typescript-eslint/no-unsafe-argument": {
+      "count": 1
+    },
+    "@typescript-eslint/no-unsafe-member-access": {
+      "count": 4
+    },
+    "@typescript-eslint/use-unknown-in-catch-callback-variable": {
+      "count": 1
+    },
+    "unicorn/no-array-sort": {
+      "count": 1
+    }
+  }
+}
