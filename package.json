@@ -5,7 +5,7 @@
   "author": "Salesforce",
   "bugs": "https://github.com/oclif/plugin-search/issues",
   "dependencies": {
-    "@oclif/core": "^4",
+    "@oclif/core": "^5.0.0",
     "ansi-escapes": "^7.3.0",
     "inquirer-autocomplete-standalone": "^0.8.1"
   },
@@ -34,7 +34,7 @@
     "typescript": "^6"
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=22.0.0"
   },
   "exports": "./dist/index.js",
   "files": [
