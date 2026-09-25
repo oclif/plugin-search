@@ -1,3 +1,9 @@
+## [2.0.1](https://github.com/oclif/plugin-search/compare/2.0.0...2.0.1) (2026-09-25)
+
+### Bug Fixes
+
+- **deps:** bump @humanfs/node from 0.16.6 to 0.16.8 ([4a59577](https://github.com/oclif/plugin-search/commit/4a59577bf170e1f0d4d8402564e71e7553032955))
+
 # [2.0.0](https://github.com/oclif/plugin-search/compare/1.3.0...2.0.0) (2026-08-31)
 
 - feat!: upgrade oclif/core to v5 @W-23512455@ ([9d18840](https://github.com/oclif/plugin-search/commit/9d188403eeb010816eb6f92f9876af82440c1c08))
