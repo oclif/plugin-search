@@ -1,3 +1,9 @@
+## [2.0.4](https://github.com/oclif/plugin-search/compare/2.0.3...2.0.4) (2026-10-15)
+
+### Bug Fixes
+
+- bump mocha, chai, and oclif dependencies ([6d18443](https://github.com/oclif/plugin-search/commit/6d184438e4ec84c76ab690f9db05b372f6d51b44))
+
 ## [2.0.3](https://github.com/oclif/plugin-search/compare/2.0.2...2.0.3) (2026-10-11)
 
 ### Bug Fixes
