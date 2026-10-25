@@ -1,3 +1,9 @@
+## [2.0.8](https://github.com/oclif/plugin-search/compare/2.0.7...2.0.8) (2026-10-25)
+
+### Bug Fixes
+
+- **deps:** bump serialize-javascript from 7.1.2 to 7.1.4 ([#890](https://github.com/oclif/plugin-search/issues/890)) ([78416fe](https://github.com/oclif/plugin-search/commit/78416fefcbbfad6b24cd653ac118e1955555e281))
+
 ## [2.0.7](https://github.com/oclif/plugin-search/compare/2.0.6...2.0.7) (2026-10-25)
 
 ### Bug Fixes
