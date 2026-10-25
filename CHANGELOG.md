@@ -1,3 +1,9 @@
+## [2.0.7](https://github.com/oclif/plugin-search/compare/2.0.6...2.0.7) (2026-10-25)
+
+### Bug Fixes
+
+- **deps:** bump undici from 6.29.0 to 6.29.1 ([#891](https://github.com/oclif/plugin-search/issues/891)) ([175293d](https://github.com/oclif/plugin-search/commit/175293d80193d193ee8c46e739700d14e57b6590))
+
 ## [2.0.6](https://github.com/oclif/plugin-search/compare/2.0.5...2.0.6) (2026-10-25)
 
 ### Bug Fixes

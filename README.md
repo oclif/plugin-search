@@ -25,7 +25,7 @@ $ npm install -g @oclif/plugin-search
 $ @oclif/plugin-search COMMAND
 running command...
 $ @oclif/plugin-search (--version)
-@oclif/plugin-search/2.0.6 linux-x64 node-v22.23.3
+@oclif/plugin-search/2.0.7 linux-x64 node-v22.23.3
 $ @oclif/plugin-search --help [COMMAND]
 USAGE
   $ @oclif/plugin-search COMMAND
@@ -54,7 +54,7 @@ DESCRIPTION
   Once you select a command, hit enter and it will show the help for that command.
 ```
 
-_See code: [src/commands/search.ts](https://github.com/oclif/plugin-search/blob/2.0.6/src/commands/search.ts)_
+_See code: [src/commands/search.ts](https://github.com/oclif/plugin-search/blob/2.0.7/src/commands/search.ts)_
 <!-- commandsstop -->
 
 # Contributing
