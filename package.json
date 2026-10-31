@@ -12,7 +12,7 @@
   "devDependencies": {
     "@commitlint/config-conventional": "^19",
     "@eslint/compat": "^1.4.1",
-    "@oclif/plugin-help": "^7.0.5",
+    "@oclif/plugin-help": "^7.0.6",
     "@oclif/plugin-plugins": "^7.0.8",
     "@oclif/prettier-config": "^0.2.2",
     "@types/chai": "^5.2.3",
